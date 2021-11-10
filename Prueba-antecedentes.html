@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" media="all" rel="Stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg " style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="align_tittle">
+                <img src="http://ies9008.mendoza.edu.ar/pluginfile.php/1/core_admin/logo/0x200/1630026381/190x298.jpg"
+                    alt="" width="30" height="50" class="d-inline-block align-text-top">
+                <span id="tittle">Sistema de Profesores</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0  ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Lista de Profesores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Registrar Profesor</a>
+                    </li>
+                    <li class="nav-itemv dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"> Materia</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Materia 1</a></li>
+                            <li><a class="dropdown-item" href="#">Materia 2</a></li>
+                            <li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Carraras
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Carrera 1</a></li>
+                            <li><a class="dropdown-item" href="#">Carrera 2</a></li>
+                            <li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sede
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Sede 1</a></li>
+                            <li><a class="dropdown-item" href="#">sede 2</a></li>
+                            <li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        id="search-input">
+                    <button class="btn btn-outline-primary" type="submit" id="search">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="title_tabul">
+        GRILLA DE ANTECEDENTES
+    </div>
+    <div class="container" id="lists">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="" data-bs-toggle="tab" data-bs-target="#A" type="button" role="tab"
+                    aria-controls="" aria-selected="true">A</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="" data-bs-toggle="tab" data-bs-target="#B" type="button" role="tab"
+                    aria-controls="" aria-selected="false">B</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="" data-bs-toggle="tab" data-bs-target="#C" type="button" role="tab"
+                    aria-controls="" aria-selected="false">C</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="" data-bs-toggle="tab" data-bs-target="#D" type="button" role="tab"
+                    aria-controls="" aria-selected="false">D</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="" data-bs-toggle="tab" data-bs-target="#E" type="button" role="tab"
+                    aria-controls="" aria-selected="false">E</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="" data-bs-toggle="tab" data-bs-target="#F" type="button" role="tab"
+                    aria-controls="" aria-selected="false">F</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="" data-bs-toggle="tab" data-bs-target="#G" type="button" role="tab"
+                    aria-controls="" aria-selected="false">G</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="" data-bs-toggle="tab" data-bs-target="#H" type="button" role="tab"
+                    aria-controls="" aria-selected="false">H</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="" data-bs-toggle="tab" data-bs-target="#I" type="button" role="tab"
+                    aria-controls="" aria-selected="false">I</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="" data-bs-toggle="tab" data-bs-target="#J" type="button" role="tab"
+                    aria-controls="" aria-selected="false">J</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="" data-bs-toggle="tab" data-bs-target="#K" type="button" role="tab"
+                    aria-controls="" aria-selected="false">K</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="A" role="tabpanel" aria-labelledby="nav-home-tab">
+                <table class="table table-bordered">
+                    <tbody class="table_">
+                        <tr>
+                            <th colspan="2">A. Título (máx 16 pts)</th>
+                            <th>Pts</th>
+                            <th>Total</th>
+                            <th>dass</th>
+                        </tr>
+                        <tr>
+                            <td>A.1</td>
+                            <td>Profesor de grado universitario y/o Profesor de nivel Superior de 4 años o más(***)</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>A.2</td>
+                            <td>Profesional universitario de 4 años o más y certificación de formación pedagógica
+                                (habilitante para el nivel superior )(*) (**)</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>A.3</td>
+                            <td>Profesional de 4 años SIN certificación de formación pedagógica</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>A.4</td>
+                            <td>Técnico de Nivel Superior y Formación docente (habilitante para el nivel superior )
+                                (Técnico de 3 o mas años)</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>A.5</td>
+                            <td>Técnico de Nivel Superior (Técnico de 3 o mas años)</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total A.Título</th>
+                            <th></th>
+                            <th></th>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="B" role="tabpanel" aria-labelledby="">
+                <table class="table table-bordered">
+                    <tbody class="table_">
+                        <tr>
+                            <th colspan="2">B. Formación Posterior al Título de Base (hasta 6 pts)</th>
+                            <th>Pts</th>
+                            <th>Total</th>
+                            <th>Asig</th>
+                        </tr>
+                        <tr>
+                            <td>B.1</td>
+                            <td>Diplomatura / Postítulo / Actualización académica (++)</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>B.2</td>
+                            <td>Especialización</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>B.3</td>
+                            <td>Licenciatura</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>B.4</td>
+                            <td>Maestria</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>B.5</td>
+                            <td>Doctorado</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total B. Formación Posterior al Título de Base</th>
+                            <th></th>
+                            <th></th>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="C" role="tabpanel" aria-labelledby="">
+                <table class="table table-bordered">
+                    <tbody class="table_">
+                        <tr>
+                            <th colspan="2">C. ANTIGÜEDAD DOCENTE (hasta 15 pts como total acumulable)</th>
+                            <th>Const</th>
+                            <th>Total</th>
+                            <th>Asig</th>
+                        </tr>
+                        <tr>
+                            <td>C.1</td>
+                            <td>Total en la docencia fuera del nivel superior - 0,5 pts por año</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>C.2</td>
+                            <td>En el Nivel Superior fuera del instituto - 0,7 pts por año o fracción no menor a 6 meses
+                            </td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>C.3</td>
+                            <td>En la Institución - 1 pts por año o fracción no menor a 6 meses</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total C. ANTIGÜEDAD DOCENTE</th>
+                            <th></th>
+                            <th></th>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="D" role="tabpanel" aria-labelledby="">
+                <table class="table table-bordered">
+                    <tbody class="table_">
+                        <tr>
+                            <th colspan="2">D. PARTICIPACION EN EVENTOS ACADÉMICOS TALES COMO CONGRESOS, JORNADAS,
+                                SIMPOSIOS, ENCUENTROS CIENTIFICOS, ETC. (hasta 5 pts )</th>
+                            <th>Pts</th>
+                            <th>Total</th>
+                            <th>Asig</th>
+                        </tr>
+                        <tr>
+                            <td>D.1</td>
+                            <td>Asistente</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>D.2</td>
+                            <td>Asistente con evaluación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>D.3</td>
+                            <td>Moderador</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>D.4</td>
+                            <td>Miembro de jurado para feria de ciencias o similares, olimpiadas provinciales,
+                                regionales, nacionales o internacionales</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+
+                        </tr>
+                        <tr>
+                            <td>D.5</td>
+                            <td>Coordinador general</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>D.6</td>
+                            <td>Miembro de comité académico</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>D.7</td>
+                            <td>Expositor</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>D.8</td>
+                            <td>Asesor o tutor de grupo para feria de ciencias o similares, olimpiadas provinciales,
+                                regionales, nacionales o internacionales para el nivel superior</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total D. PARTICIPACION EN EVENTOS ACADÉMICO</th>
+                            <th></th>
+                            <th></th>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="E" role="tabpanel" aria-labelledby="">
+                <table class="table table-bordered">
+                    <tbody class="table_">
+                        <tr>
+                            <th colspan="2">E. ELABORACION Y DICTADO DE CURSOS, JORNADAS, TALLERES, SEMINARIOS, ETC,
+                                AFINES AL NIVEL O FUNCION PARA LA QUE SE POSTULA, CON RECONOCIMIENTO DE ORGANISMOS
+                                OFICIALES (hasta 12 pts)
+                            <th>Pts</th>
+                            <th>Total</th>
+                            <th>Asig</th>
+                        </tr>
+                        <tr>
+                            <td>E.1</td>
+                            <td>Curso de 6 a 12 hs cátedras - Elaboración</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>E.2</td>
+                            <td>Curso de 6 a 12 hs cátedras - Dictado</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>E.3</td>
+                            <td>Curso de 13 a 24 hs cátedra - Elaboración</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>E.4</td>
+                            <td>Curso de 13 a 24 hs cátedra - Dictado</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+
+                        </tr>
+                        <tr>
+                            <td>E.5</td>
+                            <td>Curso de 25 a 40 hs cátedra - Elaboración</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>E.6</td>
+                            <td>Curso de 25 a 40 hs cátedra - Dictado</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>E.7</td>
+                            <td>Curso de 41 a 60 hs cátedra - Elaboración</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>E.8</td>
+                            <td>Curso de 41 a 60 hs cátedra - Dictado</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>E.9</td>
+                            <td>Curso de 61 a 100 hs cátedra - Elaboración</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>E.10</td>
+                            <td>Curso de 61 a 100 hs cátedra - Dictado</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>E.11</td>
+                            <td>Postitulo -Actualización - Elaboración (****)</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>E.12</td>
+                            <td>Postitulo -Especialización - Elaboración (****)</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>E.13</td>
+                            <td>Postítulo -Diplomatura- Elaboración (****)</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total E. ELABORACiÓN Y DICTADO DE CURSOS, JORNADAS</th>
+                            <th></th>
+                            <th></th>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="F" role="tabpanel" aria-labelledby="">
+                <table class="table table-bordered">
+                    <tbody class="table_">
+                        <tr>
+                            <th colspan="2">F. TRABAJOS DE INVESTIGACIÓN (hasta 6 pts)</th>
+                            <th>Pts</th>
+                            <th>Total</th>
+                            <th>Asig</th>
+                        </tr>
+                        <tr>
+                            <td>F.1</td>
+                            <td>Director o Co-director</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>F.2</td>
+                            <td>Investigador</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>F.3</td>
+                            <td>Ayudante de Investigación o (NoveL)</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>F.4</td>
+                            <td>Director de tesina o trabajos finales de carrera de gradoa</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>F.5</td>
+                            <td>Director de tesis de postgrado</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>F.6</td>
+                            <td>Jurado de tesis o tesina</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total F. TRABAJOS DE INSVESTIGACION</th>
+                            <th></th>
+                            <th></th>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="G" role="tabpanel" aria-labelledby="">
+                <table class="table table-bordered">
+                    <tbody class="table_">
+                        <tr>
+                            <th colspan="2">G. PUBLICACIONES VINCULADAS CON LA EDUCACION O CON LA FUNCION A LA QUE SE
+                                POSTULA (Verificada con ISBN o ISRN o ISSN)(hasta 12 pts)</th>
+                            <th>Pts</th>
+                            <th>Total</th>
+                            <th>Asig</th>
+                        </tr>
+                        <tr>
+                            <td>G.1</td>
+                            <td>Libro AUTOR</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>G.2</td>
+                            <td>Libro CO-AUTOR</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>G.3</td>
+                            <td>Libro COMPILADOR</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>G.4</td>
+                            <td>Capítulo de Libro y/o artículo en revista especializada con referato - AUTOR</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+
+                        </tr>
+                        <tr>
+                            <td>G.5</td>
+                            <td>Capítulo de Libro y/o artículo en revista especializada con referato - CO-AUTOR</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>G.6</td>
+                            <td>Cuadernillo, fascículo curricular, separata - AUTOR</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>G.7</td>
+                            <td>Cuadernillo, fascículo curricular, separata - CO-AUTOR</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>G.8</td>
+                            <td>Artículo en Revista especializada sin referato - AUTOR</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>G.9</td>
+                            <td>Artículo en Revista especializada sin referato - CO-AUTOR</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>G.10</td>
+                            <td>Otros artículos - AUTOR</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>G.11</td>
+                            <td>Otros artículos - CO-AUTOR</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total G. PUBLICACIONES VINCULADAS CON LA EDUCACION O CON LA FUNCION</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="H" role="tabpanel" aria-labelledby="">
+                <table class="table table-bordered">
+                    <tbody class="table_">
+                        <tr>
+                            <th colspan="2">H. ASISTENCIA A CURSOS, SEMINARIOS Y TALLERES AFINES AL NIVEL SUPERIOR O
+                                FUNCION PARA LA QUE SE POSTULA, CON NÚMERO DE RESOLUCIÓN.</th>
+                            <th>Pts</th>
+                            <th>Total</th>
+                            <th>Asig</th>
+                        </tr>
+                        <tr>
+                            <td>H.1</td>
+                            <td>Entre 12 y 23 hs - Sin evaluación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>H.2</td>
+                            <td>Entre 12 y 23 hs - Con evaluación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>H.3</td>
+                            <td>Entre 24 y 40 hs - Sin evaluación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>H.4</td>
+                            <td>Entre 24 y 40 hs - Con evaluación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+
+                        </tr>
+                        <tr>
+                            <td>H.5</td>
+                            <td>Entre 41 y 60 hs - Sin evaluación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>H.6</td>
+                            <td>Entre 41 y 60 hs - Con evaluación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>H.7</td>
+                            <td>Entre 61 y 80 hs - Sin evaluación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>H.8</td>
+                            <td>Entre 61 y 80 hs - Con evaluación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>H.9</td>
+                            <td>Entre 81 y 100 hs - Sin evaluación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>H.10</td>
+                            <td>Entre 81 y 100 hs - Con evaluación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>H.11</td>
+                            <td>Más de 100 hs - Sin evaluación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>H.12</td>
+                            <td>Más de 100 hs - Con evaluación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total H. ASISTENCIA A CURSOS, SEMINARIOS Y TALLERES</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="I" role="tabpanel" aria-labelledby="">
+                <table class="table table-bordered">
+                    <tbody class="table_">
+                        <tr>
+                            <th colspan="2">I. OTROS DESEMPEÑOS LABORALES EN EL AMBITO PRIVADO A FIN A LA FUNCION PARA
+                                LA QUE SE POSTULA (hasta 5 pts)</th>
+                            <th>Pts</th>
+                            <th>Total</th>
+                            <th>Asig</th>
+                        </tr>
+                        <tr>
+                            <td colspan="3">//</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total I. OTROS DESEMPEÑOS LABORALES EN EL AMBITO PRIVADO</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="J" role="tabpanel" aria-labelledby="">
+                <table class="table table-bordered">
+                    <tbody class="table_">
+                        <tr>
+                            <th colspan="2">J. CARGOS DE CONDUCCION Y/O GESTION EN EL NIVEL SUPERIOR (hasta 10 pts)</th>
+                            <th>Nivel Superior</th>
+                            <th>Asig</th>
+                        </tr>
+                        <tr>
+                            <td>J.1</td>
+                            <td>Rector</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>J.2</td>
+                            <td>Vicerrector/Director de nivel/Regente</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>J.3</td>
+                            <td>Jefatura</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>J.4</td>
+                            <td>Coordinación de carrera</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>A.5</td>
+                            <td>Miembro de Consejo Directivo</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">TOTAL PARCIAL</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total J. CARGOS DE CONDUCCION Y/O GESTION EN EL NIVEL SUPERIOR</th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="K" role="tabpanel" aria-labelledby="">
+                <table class="table table-bordered">
+                    <tbody class="table_">
+                        <tr>
+                            <th colspan="2">K. OTRAS ACTIVIDADES Y/O CARGOS PERTINENTES A LA FUNCION PARA LA QUE SE
+                                POSTULA (hasta 10 pts)</th>
+                            <th>Pts</th>
+                            <th>Total</th>
+                            <th>Asig</th>
+                        </tr>
+                        <tr>
+                            <td>K.1</td>
+                            <td>Miembro de equipo técnico de organismos e instituciones oficiales</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>K.2</td>
+                            <td>Cargo docente en el nivel superior universitario</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>K.3</td>
+                            <td>Miembro de equipo evaluador/ tabular en organismos e instituciones oficiales</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>K.4</td>
+                            <td>Miembro de Consejo Provinciales, relacionados con la educación</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+
+                        </tr>
+                        <tr>
+                            <td>K.5</td>
+                            <td>Cargo de Gestión Pública (gobierno nacional, provincial, municipal) relacionados con la
+                                Educación
+                            </td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>K.6</td>
+                            <td>Trabajo en equipos Jurisdiccionales de desarrollo curricular</td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>K.7</td>
+                            <td>Otros cargos o desempeños relacionados con la educación (considerar becas e intercambios
+                                internacionales)
+                            </td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                            <td><input class="inputNum2" type="number" id="inputNum" min="0" max="10" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Total K. OTRAS ACTIVIDADES Y/O CARGOS PERTINENTES</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <table class="table table-bordered">
+                <tbody class="table_">
+                    <tr>
+                        <th>COLOQUIO (valor máxomo a asignar 20, mínimo 18,5 )</th>
+                        <th></th>
+                        <th>Asig</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Coloquio frente a tribunal técnico/docente</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Total Coloquio</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+body {
+    background: url(https://www.meteorologiaenred.com/wp-content/uploads/2018/10/monta%C3%B1as-rocosas.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#align_tittle {
+    padding-right: 19%
+}
+
+#tittle {
+    position: absolute;
+    padding-left: 1%;
+    margin-top: 10px;
+}
+
+#color_nav {
+    background-color: #e3f2fd;
+}
+
+#search {
+    height: 35px;
+    width: 100px;
+    margin-top: 12px;
+}
+
+#search-input {
+    height: 35px;
+    width: 300px;
+    margin-top: 12px;
+}
+
+.formulario_ {
+    position: absolute;
+    margin: 2%;
+    left: 0;
+    right: 70%;
+    width: 340px;
+    height: 640px;
+    background: rgba(255, 255, 255, 0.678);
+    overflow: hidden;
+}
+
+.header_formulario {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background: rgb(13, 123, 248);
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 21px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.logo_formulario {
+    position: relative;
+    top: -10px;
+    width: 60px;
+    height: 100px;
+    margin: 4%;
+    margin-left: 40%;
+    background: url(http://ies9008.mendoza.edu.ar/pluginfile.php/1/core_admin/logo/0x200/1630026381/190x298.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#formulario input {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    height: 25px;
+    width: 84%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#formulario input {
+    border: none;
+    border-left: 5px solid;
+    border-color: rgb(0, 79, 248);
+    color: rgb(133, 133, 133);
+    font-weight: 300;
+    font-size: 16px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#formulario input:focus {
+    outline: 0;
+    background: rgba(255, 255, 255, 0.589);
+    border-radius: 20px;
+    border-color: transparent;
+}
+
+#btn {
+    margin-top: 0%;
+    margin-left: 12%;
+}
+
+#submit,
+#reset {
+    margin: 4%;
+    height: 40px;
+    width: 130px;
+}
+
+#container {
+    position: absolute;
+    margin-left: 380px;
+    width: 72%;
+    padding: 2.5%;
+    margin-top: 1.6%;
+}
+
+#lists ul li {
+    background: white;
+}
+
+.table_ {
+    background-color: white;
+}
+
+.title_tabul {
+    background-color: rgb(54, 158, 206);
+    width: 82%;
+    margin-left: 124px;
+    border-radius: 8px;
+    margin-top: 0.5%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 0.3%;
+}
+
+#inputNum {
+    width: 45px;
+    outline: none;
+    border: 0;
+    border-bottom: solid #C8C8C8 .2rem;
+    text-align: center;
+    margin-top: 7px;
+    font-size: 17px;
+}
+
+
+/*estilos que pertenencen al formulario de registro profesores no repetir los id y clases para evitar sobreescritra de estilos*/
