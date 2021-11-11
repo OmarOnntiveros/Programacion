@@ -67,15 +67,15 @@
             if ($('#celular').val() == '' || $('#celular').val() == null) {
                 document.getElementById("celular-error").innerHTML = 'No se a ingresado ningun celular';
                 $('#celular').css("border-bottom-color", "#F14B4B");
-                respuesta = 1;
+
             } else if (isNaN($('#celular').val())) {
                 document.getElementById("celular-error").innerHTML = 'No debe conterner niguna letra o caracter epecial';
                 $('#celular').css("border-bottom-color", "#F14B4B");
-                respuesta = 1;
+
             } else {
                 document.getElementById("celular-error").innerHTML = '';
                 $('#celular').css("border-bottom-color", "#C8C8C8");
-                contador++;
+
             }
             /*------------------------------------------------------------------------------------------*/
             if ($('#telefonoFijo').val() == '' || $('#telefonoFijo').val() == null) {
@@ -85,11 +85,11 @@
             } else if (isNaN($('#telefonoFijo').val())) {
                 document.getElementById("telefonoFijo-error").innerHTML = 'No debe conterner niguna letra o caracter epecial';
                 $('#telefonoFijo').css("border-bottom-color", "#F14B4B");
-                respuesta = 1;
+
             } else {
                 document.getElementById("telefonoFijo-error").innerHTML = '';
                 $('#telefonoFijo').css("border-bottom-color", "#C8C8C8");
-                contador++;
+
             }
 
             /*------------------------------------------------------------------------------------------*/
