@@ -8,29 +8,13 @@ body {
 }
 
 #align_tittle {
-    padding-right: 19%
+    padding-right: 19%;
 }
 
 #tittle {
     position: absolute;
     padding-left: 1%;
-    margin-top: 10px;
-}
-
-#color_nav {
-    background-color: #e3f2fd;
-}
-
-#search {
-    height: 35px;
-    width: 100px;
-    margin-top: 12px;
-}
-
-#search-input {
-    height: 35px;
-    width: 300px;
-    margin-top: 12px;
+    margin-top: 15px;
 }
 
 .formulario_ {
@@ -38,14 +22,14 @@ body {
     margin: 2%;
     left: 0;
     right: 70%;
-    width: 340px;
-    height: 640px;
+    width: 30%;
     background: rgba(255, 255, 255, 0.678);
     overflow: hidden;
 }
-
 .header_formulario {
     position: relative;
+    font-family: 'Verdana';
+    text-align: center;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -59,7 +43,7 @@ h1 {
     text-align: center;
     font-weight: 300;
     font-size: 21px;
-    color: rgba(255, 255, 255, .5);
+    color: rgb(0, 0, 0);
 }
 
 .logo_formulario {
@@ -68,7 +52,7 @@ h1 {
     width: 60px;
     height: 100px;
     margin: 4%;
-    margin-left: 40%;
+    margin-left: 42.5%;
     background: url(http://ies9008.mendoza.edu.ar/pluginfile.php/1/core_admin/logo/0x200/1630026381/190x298.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -81,16 +65,8 @@ h1 {
 }
 
 #formulario input {
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    display: block;
-    margin: 20px auto;
-    padding: 10px;
-    height: 25px;
-    width: 84%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    margin-top: 3px;
+    height: 50px;
 }
 
 #formulario input {
@@ -115,26 +91,23 @@ h1 {
 
 #btn {
     margin-top: 0%;
-    margin-left: 12%;
+    margin-left: 38%;
 }
 
-#submit,
-#reset {
-    margin: 4%;
-    height: 40px;
-    width: 130px;
+.btn-group {
+    margin-left: 57px;
 }
 
 #container {
-    position: absolute;
-    margin-left: 380px;
-    width: 72%;
+    margin-left: 404px;
+    width: 945px;
     padding: 2.5%;
-    margin-top: 1.6%;
+    margin-top: -0.5%;
 }
 
+/*Atributos grilla de tabulación*/
 #lists ul li {
-    background: white;
+    background: rgb(255, 0, 0);
 }
 
 .table_ {
