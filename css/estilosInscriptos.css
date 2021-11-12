@@ -1,0 +1,68 @@
+body {
+    background: url(http://ies9008.mendoza.edu.ar/pluginfile.php/1/theme_fordson/backgroundimage/1630026381/bliker.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#align_tittle {
+    padding-right: 19%
+}
+
+#tittle {
+    position: absolute;
+    padding-left: 1%;
+    margin-top: 10px;
+}
+
+#color_nav {
+    background-color: #e3f2fd;
+}
+
+#search {
+    height: 35px;
+    width: 100px;
+    margin-top: 12px;
+}
+
+#search-input {
+    height: 35px;
+    width: 300px;
+    margin-top: 12px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+#container ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#container ul li{
+    list-style: none;
+}
+
+#container ul li button{
+    background-color: whitesmoke;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+#container ul li button:hover{
+    border: 1px solid gray;
+}
+
+#container table td a{
+    text-decoration: none;
+    background-color: #e3f2fd;
+}
+
+/*estilos que pertenencen al formulario de resgrito profesor no respertir los id y clases para evitar sobreescritra de estilos*/

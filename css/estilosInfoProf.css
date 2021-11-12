@@ -1,0 +1,103 @@
+body {
+    background: url(http://ies9008.mendoza.edu.ar/pluginfile.php/1/theme_fordson/backgroundimage/1630026381/bliker.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#align_tittle {
+    padding-right: 19%
+}
+
+#tittle {
+    position: absolute;
+    padding-left: 1%;
+    margin-top: 10px;
+}
+
+#color_nav {
+    background-color: #e3f2fd;
+}
+
+#search {
+    height: 35px;
+    width: 100px;
+    margin-top: 12px;
+}
+
+#search-input {
+    height: 35px;
+    width: 300px;
+    margin-top: 12px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contenedor .formDatos{
+    background-color: #cfe2ff;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 500px;
+}
+
+label{
+    margin: 5px;
+}
+
+.formDatos input{
+    padding: 5px;
+    font-size: 18px;
+    border-left: 5px solid blue;
+}
+
+.contenedor #titAplicar{
+    padding: 10px;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.contenedor form{
+    background-color: #cfe2ff;
+    margin: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor form select{
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+}   
+
+.contenedor form input{
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    transition: all 0.1s;
+}  
+
+.contenedor form input:focus{
+    outline: 3px solid cornflowerblue;
+}  
+
+.contenedor form input[type="submit"]{
+    margin: 20px;
+    margin-left: 300px;
+    border-radius: 10px;
+}
+
+.contenedor form input[type="submit"]:hover{
+    background-color: cornflowerblue;
+}

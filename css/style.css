@@ -1,0 +1,180 @@
+body {
+    background: url(http://ies9008.mendoza.edu.ar/pluginfile.php/1/theme_fordson/backgroundimage/1630026381/bliker.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#align_tittle {
+    padding-right: 19%
+}
+
+#tittle {
+    position: absolute;
+    padding-left: 1%;
+    margin-top: 10px;
+}
+
+#color_nav {
+    background-color: #e3f2fd;
+}
+
+#search {
+    height: 35px;
+    width: 100px;
+    margin-top: 12px;
+}
+
+#search-input {
+    height: 35px;
+    width: 300px;
+    margin-top: 12px;
+}
+
+.formulario_ {
+    width: 500px;
+    background: rgba(255, 255, 255, 0.678);
+    margin: 25px
+}
+
+.header_formulario {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background: rgb(13, 123, 248);
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 21px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.logo_formulario {
+    position: relative;
+    top: -10px;
+    width: 60px;
+    height: 100px;
+    margin: 4%;
+    margin-left: 40%;
+    background: url(http://ies9008.mendoza.edu.ar/pluginfile.php/1/core_admin/logo/0x200/1630026381/190x298.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#formulario input {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    height: 25px;
+    width: 84%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    border: none;
+    border-left: 5px solid;
+    border-color: rgb(0, 79, 248);
+    color: rgb(133, 133, 133);
+    font-weight: 300;
+    font-size: 16px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#formulario select{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    height: 25px;
+    width: 84%;
+    border: none;
+    border-left: 5px solid;
+    border-color: rgb(0, 79, 248);
+    color: rgb(133, 133, 133);
+    font-weight: 300;
+    font-size: 16px;
+    transition: all .2s ease-in-out;
+}
+
+#formulario input:focus, select:focus {
+    outline: 0;
+    background: rgba(255, 255, 255, 0.589);
+    border-radius: 20px;
+    border-color: transparent;
+}
+
+#formulario #titleInput{
+    margin-left: 50px;
+}
+
+#formulario .comprobar{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#formulario #titlefechaNac{
+    margin-left: 50px;
+    padding-bottom: 50px;
+}
+
+#btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+#sig{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#btnsubmit{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+#submit{
+    width: 200px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+#lists ul li {
+    background: white;
+}
+
+.table_ {
+    background-color: white;
+}
+
+.container {
+    margin-top: 0.3%;
+}
+
+
+/*estilos que pertenencen al formulario de resgrito profesor no respertir los id y clases para evitar sobreescritra de estilos*/
